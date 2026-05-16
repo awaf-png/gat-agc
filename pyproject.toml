@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gat-agc"
+version = "1.0.0"
+description = "Graph Attention Network for Automatic Generation Control in IoT-enabled hybrid AC/DC microgrids"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["automatic generation control", "graph attention network",
+            "reinforcement learning", "microgrid", "smart grid"]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "torch>=2.0",
+    "torch-geometric>=2.3",
+    "matplotlib>=3.6",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

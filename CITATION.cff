@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "GAT-AGC: Graph Attention Network for Automatic Generation Control in IoT-enabled hybrid AC/DC microgrids"
+authors:
+  - family-names: Almolhis
+    given-names: Nawaf Abdualaziz
+  - family-names: Duraibi
+    given-names: Salahaldeen
+version: 1.0.0
+date-released: 2025-01-01
+license: MIT
